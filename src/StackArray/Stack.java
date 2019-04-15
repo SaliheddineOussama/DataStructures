@@ -16,6 +16,7 @@ public class Stack<T> {
 		this.stack[counter++] = data;
 	}
 
+	// O(N) ==> Linear Time Complexity !!! :(
 	private void resizeArray(int capacity) {
 		T[] copieArray = (T[]) new Object[capacity];
 		for(int i=0; i<this.counter; i++)
